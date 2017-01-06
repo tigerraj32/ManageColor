@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ManageColor" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lql-5w-yuB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w26-xX-6bU">
+                                        <rect key="frame" x="98" y="21" width="189" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="11t-X1-fGH"/>
+                                            <constraint firstAttribute="width" constant="189" id="tzR-Me-anx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93884980370000004" green="0.23700648069999999" blue="0.85385057310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="3Ek-sg-kXG"/>
+                                    <constraint firstItem="w26-xX-6bU" firstAttribute="centerY" secondItem="Lql-5w-yuB" secondAttribute="centerY" constant="1" id="ceD-Y4-hhu"/>
+                                    <constraint firstItem="w26-xX-6bU" firstAttribute="centerX" secondItem="Lql-5w-yuB" secondAttribute="centerX" constant="5" id="lJx-1P-OVj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-Rp-cxN">
+                                <rect key="frame" x="0.0" y="62" width="375" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="572-ue-DQy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cIf-Rp-cxN" firstAttribute="top" secondItem="Lql-5w-yuB" secondAttribute="bottom" constant="1" id="RQB-jL-yaU"/>
+                            <constraint firstItem="Lql-5w-yuB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tmw-zG-VQG"/>
+                            <constraint firstItem="Lql-5w-yuB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aqs-Ya-Jiq"/>
+                            <constraint firstAttribute="trailing" secondItem="cIf-Rp-cxN" secondAttribute="trailing" id="b9n-s9-3e8"/>
+                            <constraint firstAttribute="trailing" secondItem="Lql-5w-yuB" secondAttribute="trailing" id="qf0-rk-eV8"/>
+                            <constraint firstItem="cIf-Rp-cxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w4Y-u1-aPL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="cIf-Rp-cxN" id="9yz-4q-VrK"/>
+                        <outlet property="titleLabel" destination="w26-xX-6bU" id="i0y-d1-ck8"/>
+                        <outlet property="topview" destination="Lql-5w-yuB" id="GxG-Qg-MF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
